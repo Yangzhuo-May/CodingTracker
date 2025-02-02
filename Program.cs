@@ -14,8 +14,6 @@ namespace Coding_Tracker
         static string? connectionString = ConfigHelper.GetConnectionString();
         static void Main(string[] args)
         {
-            Console.WriteLine($"Connection String: {connectionString}");
-
             DatabaseManager databaseManager = new DatabaseManager();   
             databaseManager.CreateDatabase(connectionString);
             UserInput.GetUserInput();
