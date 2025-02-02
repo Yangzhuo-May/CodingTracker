@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
 using Spectre.Console;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -90,8 +89,6 @@ namespace Coding_Tracker
         {
             int StartHour = Convert.ToInt32($"{startTime[0]}{startTime[1]}");
             int EndHour = Convert.ToInt32($"{endTime[0]}{endTime[1]}");
-            int StartMinute = Convert.ToInt32($"{startTime[3]}{startTime[4]}");
-            int EndMinute = Convert.ToInt32($"{endTime[3]}{endTime[4]}");
 
             if (StartHour > EndHour )
             {
