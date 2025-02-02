@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Data.Sqlite;
 using Spectre.Console;
 using static System.Runtime.InteropServices.JavaScript.JSType;
