@@ -1,5 +1,5 @@
-# Habit_Logger
- This is a very simple app that will teach you how to perform CRUD operations against a real database. The first application where I connect to the database myself.
+# Coding Tracker
+ This is a very simple app that will teach you how to perform CRUD operations against a real database. 
  
 # Requirements
 - [x] This application has the same requirements as the previous project, except that now you'll be logging your daily coding time.
@@ -27,15 +27,15 @@
     - Input validation is implemented: a warning message will appear if an incorrect date or unavailable menu option is entered, also when user entered a Startime smaller than Endtime.
       
 - Implemented Separation of concerns.
-    - There are different class responsable for different function.
+    - The application is designed with a clear separation of concerns, where different classes are responsible for distinct functionalities. Below is an overview of the key classes and their roles:
         - Program.cs -> The entre point of the application.
-        - CodingSession.cs -> It contains the properties of your coding session.
-        - CodingController.cs -> Store the logic of CRUD operations.
-        - ConfigHelper.cs -> Helps other calss to get the connectionString.
-        - DatabaseManager.cs -> Creat the database if it doesn't exist.
-        - UserInput.cs -> Contains the logic of main menu.
-        - Validation.cs -> Includs all the validation functions, such as GetDateInput(); It makes sure all input is in correct imfromt.
-        - TableVisualisationEngine.cs -> Creat a table with the "Spectre.Console" library.
+        - CodingSession.cs -> Contains the properties of a coding session.
+        - CodingController.cs -> Handles the logic for CRUD (Create, Read, Update, Delete) operations.
+        - ConfigHelper.cs -> Assists other classes in retrieving the connection string from the configuration.
+        - DatabaseManager.cs -> Creates the database and required tables if they do not already exist.
+        - UserInput.cs -> Manages the logic for the main menu.
+        - Validation.cs -> Includs all the validation functions, such as GetDateInput(), to ensure all user inputs are in the correct format.
+        - TableVisualisationEngine.cs -> Generates and displays tables using the Spectre.Console library.
  --------------
  # Challenges
 - **Separating functions into different files**: I initially struggled with understanding how to separate functions into different files and make them work together. Later after I started to build it, I could see how it works.
