@@ -4,7 +4,6 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Coding_Tracker;
 using Microsoft.Data.Sqlite;
 using Spectre.Console;
 using Microsoft.Extensions.Configuration;
