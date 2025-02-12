@@ -1,10 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using Coding_Tracker;
-using System;
+﻿using System.Diagnostics.Metrics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Data.Sqlite;
-using System.Runtime.CompilerServices;
 
 namespace Coding_Tracker
 {

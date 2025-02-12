@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
 using Microsoft.Data.Sqlite;
 using Spectre.Console;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -27,7 +25,6 @@ namespace Coding_Tracker
             Console.Clear();
             bool closeApp = false;
 
-            string date, startTime, endTime, duration;
             string Id;
 
             while (closeApp == false)

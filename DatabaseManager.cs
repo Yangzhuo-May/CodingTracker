@@ -1,5 +1,4 @@
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.Data.Sqlite;
 
 namespace Coding_Tracker

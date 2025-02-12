@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using Microsoft.Data.Sqlite;
 using Spectre.Console;
 using Microsoft.Extensions.Configuration;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Spectre.Console;
-using System.Numerics;
 
 namespace Coding_Tracker
 {
