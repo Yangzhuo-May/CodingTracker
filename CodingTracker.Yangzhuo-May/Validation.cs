@@ -73,6 +73,7 @@ namespace Coding_Tracker
                 success = int.TryParse(numberInput, out finalInput);
 
                 if (!success)
+
                 {
                     Console.Clear();
                     controller.Read();
