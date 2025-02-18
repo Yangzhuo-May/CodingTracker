@@ -3,34 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\29351\\Desktop\\Coding Tracker\\",
   "Documents": [
     {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{FF9B372C-0A11-4360-B4F0-27F4A9E0CCE9}|CodingTracker.Yangzhuo-May\\Coding Tracker.csproj|c:\\users\\29351\\desktop\\coding tracker\\codingtracker.yangzhuo-may\\codingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF9B372C-0A11-4360-B4F0-27F4A9E0CCE9}|CodingTracker.Yangzhuo-May\\Coding Tracker.csproj|solutionrelative:codingtracker.yangzhuo-may\\codingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\DatabaseManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\ConfigHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF9B372C-0A11-4360-B4F0-27F4A9E0CCE9}|CodingTracker.Yangzhuo-May\\Coding Tracker.csproj|c:\\users\\29351\\desktop\\coding tracker\\codingtracker.yangzhuo-may\\userinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF9B372C-0A11-4360-B4F0-27F4A9E0CCE9}|CodingTracker.Yangzhuo-May\\Coding Tracker.csproj|solutionrelative:codingtracker.yangzhuo-may\\userinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\TableVisualisationEngine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingSession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\UserInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\Validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF9B372C-0A11-4360-B4F0-27F4A9E0CCE9}|CodingTracker.Yangzhuo-May\\Coding Tracker.csproj|c:\\users\\29351\\desktop\\coding tracker\\codingtracker.yangzhuo-may\\codingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF9B372C-0A11-4360-B4F0-27F4A9E0CCE9}|CodingTracker.Yangzhuo-May\\Coding Tracker.csproj|solutionrelative:codingtracker.yangzhuo-may\\codingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> bba7ad70921e3fc2921eda4b0e2f4f5867f54024
     }
   ],
   "DocumentGroupContainers": [
@@ -40,128 +29,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 213,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\launchSettings.json",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\launchSettings.json",
-              "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\launchSettings.json",
-              "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-01T17:34:42.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\appsettings.json",
-              "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\appsettings.json",
-              "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-01T17:29:44.414Z"
-            },
-            {
-              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
-              "Title": "DatabaseManager.cs",
-              "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\DatabaseManager.cs",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\DatabaseManager.cs",
-              "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\DatabaseManager.cs",
-              "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\DatabaseManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T20:37:47.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\Program.cs",
-              "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\Program.cs",
-              "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAgwA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T12:50:00.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TableVisualisationEngine.cs",
-              "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\TableVisualisationEngine.cs",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\TableVisualisationEngine.cs",
-              "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\TableVisualisationEngine.cs",
-              "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\TableVisualisationEngine.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T14:04:20.702Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ConfigHelper.cs",
-              "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\ConfigHelper.cs",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\ConfigHelper.cs",
-              "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\ConfigHelper.cs",
-              "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\ConfigHelper.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAYwBgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T12:11:00.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "CodingController.cs",
               "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingController.cs",
               "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingController.cs",
               "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingController.cs",
               "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFoAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAFoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T14:02:07.569Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "WhenOpened": "2025-01-25T14:02:07.569Z",
+=======
+              "DocumentIndex": 3,
               "Title": "CodingSession.cs",
-              "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingSession.cs",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingSession.cs",
-              "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingSession.cs",
-              "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingSession.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\29351\\Desktop\\Coding Tracker\\CodingTracker.Yangzhuo-May\\CodingSession.cs",
+              "RelativeDocumentMoniker": "CodingTracker.Yangzhuo-May\\CodingSession.cs",
+              "ToolTip": "C:\\Users\\29351\\Desktop\\Coding Tracker\\CodingTracker.Yangzhuo-May\\CodingSession.cs",
+              "RelativeToolTip": "CodingTracker.Yangzhuo-May\\CodingSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T20:41:58.094Z"
+              "WhenOpened": "2025-02-18T15:57:32.396Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "UserInput.cs",
-              "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\UserInput.cs",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\UserInput.cs",
-              "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\UserInput.cs",
-              "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\UserInput.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAApAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\29351\\Desktop\\Coding Tracker\\CodingTracker.Yangzhuo-May\\UserInput.cs",
+              "RelativeDocumentMoniker": "CodingTracker.Yangzhuo-May\\UserInput.cs",
+              "ToolTip": "C:\\Users\\29351\\Desktop\\Coding Tracker\\CodingTracker.Yangzhuo-May\\UserInput.cs",
+              "RelativeToolTip": "CodingTracker.Yangzhuo-May\\UserInput.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAWwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T18:26:52.581Z"
+              "WhenOpened": "2025-02-18T15:55:11.664Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Validation.cs",
-              "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\Validation.cs",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\Validation.cs",
-              "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\Validation.cs",
-              "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\Validation.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwGgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CodingController.cs",
+              "DocumentMoniker": "C:\\Users\\29351\\Desktop\\Coding Tracker\\CodingTracker.Yangzhuo-May\\CodingController.cs",
+              "RelativeDocumentMoniker": "CodingTracker.Yangzhuo-May\\CodingController.cs",
+              "ToolTip": "C:\\Users\\29351\\Desktop\\Coding Tracker\\CodingTracker.Yangzhuo-May\\CodingController.cs",
+              "RelativeToolTip": "CodingTracker.Yangzhuo-May\\CodingController.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAMwHEAAACTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T11:52:31.774Z"
+              "WhenOpened": "2025-02-18T15:49:08.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DatabaseManager.cs",
+              "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\DatabaseManager.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\DatabaseManager.cs",
+              "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\DatabaseManager.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\DatabaseManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T20:37:47.132Z",
+>>>>>>> bba7ad70921e3fc2921eda4b0e2f4f5867f54024
+              "EditorCaption": ""
             }
           ]
         }

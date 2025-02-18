@@ -1,18 +1,6 @@
 # Coding Tracker
- This is a very simple app that will teach you how to perform CRUD operations against a real database. 
- 
-# Requirements
-- [x] This application has the same requirements as the previous project, except that now you'll be logging your daily coding time.
-- [x] To show the data on the console, you should use the "Spectre.Console" library.
-- [x] You're required to have separate classes in different files (ex. UserInput.cs, Validation.cs, CodingController.cs)
-- [x] You should tell the user the specific format you want the date and time to be logged and not allow any other format.
-- [x] You'll need to create a configuration file that you'll contain your database path and connection strings.
-- [x] You'll need to create a "CodingSession" class in a separate file. It will contain the properties of your coding session: Id, StartTime, EndTime, Duration
-- [x] The user shouldn't input the duration of the session. It should be calculated based on the Start and End times, in a separate "CalculateDuration" method.
-- [x] The user should be able to input the start and end times manually.
-- [x] You need to use Dapper ORM for the data access instead of ADO.NET. (This requirement was included in Feb/2024)
-- [x] When reading from the database, you can't use an anonymous object, you have to read your table into a List of Coding Sessions.
-- [x] Follow the DRY Principle, and avoid code repetition.
+This is a very simple app that will teach you how to perform CRUD operations against a real database. 
+
 ---------
 # Features
 - SQLite database connection.
@@ -28,14 +16,22 @@
       
 - Implemented Separation of concerns.
     - The application is designed with a clear separation of concerns, where different classes are responsible for distinct functionalities. Below is an overview of the key classes and their roles:
-        - Program.cs -> The entre point of the application.
-        - CodingSession.cs -> Contains the properties of a coding session.
-        - CodingController.cs -> Handles the logic for CRUD (Create, Read, Update, Delete) operations.
-        - ConfigHelper.cs -> Assists other classes in retrieving the connection string from the configuration.
-        - DatabaseManager.cs -> Creates the database and required tables if they do not already exist.
-        - UserInput.cs -> Manages the logic for the main menu.
-        - Validation.cs -> Includs all the validation functions, such as GetDateInput(), to ensure all user inputs are in the correct format.
-        - TableVisualisationEngine.cs -> Generates and displays tables using the Spectre.Console library.
+        - Program.cs
+           ->The entre point of the application.
+        - CodingSession.cs
+           -> Contains the properties of a coding session.
+        - CodingController.cs
+           -> Handles the logic for CRUD (Create, Read, Update, Delete) operations.
+        - ConfigHelper.cs
+           -> Assists other classes in retrieving the connection string from the configuration.
+        - DatabaseManager.cs
+           -> Creates the database and required tables if they do not already exist.
+        - UserInput.cs
+           -> Manages the logic for the main menu.
+        - Validation.cs
+           -> Includs all the validation functions, such as GetDateInput(), to ensure all user inputs are in the correct format.
+        - TableVisualisationEngine.cs
+           -> Generates and displays tables using the Spectre.Console library.
  --------------
  # Challenges
 - **Separating functions into different files**: I initially struggled with understanding how to separate functions into different files and make them work together. Later after I started to build it, I could see how it works.
