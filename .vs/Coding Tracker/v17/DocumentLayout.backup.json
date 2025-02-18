@@ -3,9 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\29351\\Desktop\\Coding Tracker\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
       "AbsoluteMoniker": "D:0:0:{FF9B372C-0A11-4360-B4F0-27F4A9E0CCE9}|CodingTracker.Yangzhuo-May\\Coding Tracker.csproj|c:\\users\\29351\\desktop\\coding tracker\\codingtracker.yangzhuo-may\\codingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF9B372C-0A11-4360-B4F0-27F4A9E0CCE9}|CodingTracker.Yangzhuo-May\\Coding Tracker.csproj|solutionrelative:codingtracker.yangzhuo-may\\codingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,7 +16,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FF9B372C-0A11-4360-B4F0-27F4A9E0CCE9}|CodingTracker.Yangzhuo-May\\Coding Tracker.csproj|c:\\users\\29351\\desktop\\coding tracker\\codingtracker.yangzhuo-may\\codingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF9B372C-0A11-4360-B4F0-27F4A9E0CCE9}|CodingTracker.Yangzhuo-May\\Coding Tracker.csproj|solutionrelative:codingtracker.yangzhuo-may\\codingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> bba7ad70921e3fc2921eda4b0e2f4f5867f54024
     }
   ],
   "DocumentGroupContainers": [
@@ -29,21 +25,10 @@
       "DocumentGroups": [
         {
           "DockedWidth": 213,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 0,
-              "Title": "CodingController.cs",
-              "DocumentMoniker": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingController.cs",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingController.cs",
-              "ToolTip": "C:\\Users\\29351\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingController.cs",
-              "RelativeToolTip": "..\\..\\source\\repos\\Coding Tracker\\Coding Tracker\\CodingController.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAAAFoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T14:02:07.569Z",
-=======
               "DocumentIndex": 3,
               "Title": "CodingSession.cs",
               "DocumentMoniker": "C:\\Users\\29351\\Desktop\\Coding Tracker\\CodingTracker.Yangzhuo-May\\CodingSession.cs",
@@ -92,7 +77,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T20:37:47.132Z",
->>>>>>> bba7ad70921e3fc2921eda4b0e2f4f5867f54024
               "EditorCaption": ""
             }
           ]
