@@ -6,6 +6,7 @@ using Spectre.Console;
 using Microsoft.Extensions.Configuration;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Spectre.Console;
+using Dapper;
 
 namespace Coding_Tracker
 {
@@ -18,12 +19,10 @@ namespace Coding_Tracker
         {
             using (var connection = new SqliteConnection(connectionString))
             {
-                string date, startTime, endTime, end = null, start = null;
+                string date, startTime, endTime, end = null, start = null, duration;
                 bool TimeSafe = true;
                 
                 connection.Open();
-                var tableCmd = connection.CreateCommand();
-
                 date = Validation.GetDateInput();
 
                 do
@@ -37,17 +36,17 @@ namespace Coding_Tracker
                     endTime = Validation.GetTimeInput();
                     end = endTime;
                     start = startTime;
+                    duration = UserInput.CalculateDuration(startTime, endTime);
 
                     TimeSafe = Validation.TimeSafe(startTime, endTime);
                 } while (!TimeSafe);
 
-                tableCmd.CommandText = $"INSERT INTO coding_time(date, starttime, endtime, duration) VALUES('{date}', '{startTime}', '{endTime}', '{UserInput.CalculateDuration(startTime, endTime)}')";
+                 var tableCmd = "INSERT INTO coding_time(date, starttime, endtime, duration) VALUES(@date, @startTime, @endTime, @duration)";
 
-                tableCmd.ExecuteNonQuery();
+                var parameters =  new { date = date, startTime = startTime, endTime = endTime, duration = duration } ;
 
-                connection.Close();
+                connection.Execute(tableCmd, parameters);
             }
-
             UserInput.AskForNextAction("1", "Insert");
         }
 
@@ -56,29 +55,11 @@ namespace Coding_Tracker
             using (var connection = new SqliteConnection(connectionString))
             {
                 connection.Open();
-                var tableCmd = connection.CreateCommand();
-                tableCmd.CommandText = $"SELECT * from coding_time";
-            
-                List<CodingSession> tableData = new();
+                List<CodingSession> tableData = new List<CodingSession>();
+                
+                var tableCmd = $"SELECT * from coding_time";
+                tableData = connection.Query<CodingSession>(tableCmd).ToList();
 
-                SqliteDataReader reader = tableCmd.ExecuteReader();
-
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        tableData.Add(new CodingSession
-                        {
-                            Id = reader.GetInt32(0),
-                            Date = reader.GetString(1),
-                            StartTime = reader.GetString(2),
-                            EndTime = reader.GetString(3),
-                            Duration = reader.GetString(4),
-                        });
-                    }
-                }
-
-                connection.Close();
                 tableVisualisationEngine.ShowTable(tableData);
             }
         }
@@ -86,16 +67,17 @@ namespace Coding_Tracker
         public void Update(string Id)
         {
             int checkQuery;
-
+           
             using (var connection = new SqliteConnection(connectionString))
             {
                 do
                 {
                     connection.Open();
-                    var checkCmd = connection.CreateCommand();
-                    checkCmd.CommandText =
-                        $"SELECT EXISTS(SELECT 1 FROM coding_time WHERE Id = {Id})";
-                    checkQuery = Convert.ToInt32(checkCmd.ExecuteScalar());
+                    var checkCmd =
+                        "SELECT EXISTS(SELECT 1 FROM coding_time WHERE Id = @id)";
+                    var checkParameters = new { id =  Id };
+
+                    checkQuery = Convert.ToInt32(connection.ExecuteScalar(checkCmd, checkParameters));
 
                     if (checkQuery == 0)
                     {
@@ -107,11 +89,8 @@ namespace Coding_Tracker
                     }
                 } while (checkQuery == 0);
 
-                var tableCmd = connection.CreateCommand();
-
-                string date, startTime, endTime, end = null, start = null;
+                string date, startTime, endTime, end = null, start = null, duration;
                 bool TimeSafe = true ;
-
                 date = Validation.GetDateInput();
 
                 do
@@ -125,14 +104,16 @@ namespace Coding_Tracker
                     endTime = Validation.GetTimeInput();
                     end = endTime;
                     start = startTime;
+                    duration = UserInput.CalculateDuration(startTime, endTime);
 
                     TimeSafe = Validation.TimeSafe(startTime, endTime);
                 } while (!TimeSafe);
 
-                tableCmd.CommandText = $"UPDATE coding_time SET date = '{date}', starttime = '{startTime}', endtime = '{endTime}', duration = '{UserInput.CalculateDuration(startTime, endTime)}' WHERE Id = {Id}";
+                var tableCmd = "UPDATE coding_time SET date = @date, starttime = @startTime, endtime = @endTime, duration = @duration WHERE Id = @id";
 
-                tableCmd.ExecuteNonQuery();
-                connection.Close();
+                var parameters = new { date = date, startTime = startTime, endTime = endTime, duration = duration, id = Id };
+
+                connection.Execute(tableCmd, parameters);
             }
 
             UserInput.AskForNextAction(Id, "Update");
@@ -147,10 +128,12 @@ namespace Coding_Tracker
                 do
                 {
                     connection.Open();
-                    var checkCmd = connection.CreateCommand();
-                    checkCmd.CommandText =
-                        $"SELECT EXISTS(SELECT 1 FROM coding_time WHERE Id = {Id})";
-                    checkQuery = Convert.ToInt32(checkCmd.ExecuteScalar());
+
+                    var checkCmd =
+                        "SELECT EXISTS(SELECT 1 FROM coding_time WHERE Id = @id)";
+                    var checkParameters = new { id = Id };
+
+                    checkQuery = Convert.ToInt32(connection.ExecuteScalar(checkCmd, checkParameters));
 
                     if (checkQuery == 0)
                     {
@@ -162,11 +145,10 @@ namespace Coding_Tracker
                     }
                 } while (checkQuery == 0);
 
-                var tableCmd = connection.CreateCommand();
-                tableCmd.CommandText = $"DELETE from coding_time WHERE Id = '{Id}'";
+                var tableCmd = $"DELETE from coding_time WHERE Id = @id";
+                var parameters = new { id = Id };
 
-                tableCmd.ExecuteNonQuery();
-                connection.Close();
+                connection.Execute(tableCmd, parameters);
             }
 
             UserInput.AskForNextAction(Id, "Delete");
