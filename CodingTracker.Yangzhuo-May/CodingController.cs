@@ -10,7 +10,7 @@ using Dapper;
 
 namespace Coding_Tracker
 {
-    internal class CodingController
+    public class CodingController
     {
         private static string connectionString = ConfigHelper.GetConnectionString();
         TableVisualisationEngine tableVisualisationEngine = new TableVisualisationEngine();

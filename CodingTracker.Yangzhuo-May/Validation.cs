@@ -6,73 +6,83 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Coding_Tracker
 {
-    internal class Validation
+    public static class Validation
     {
         public static CodingController controller = new CodingController();
+
+        static DateTime dateTimeInput;
+        static int finalInput;
+
         public static string GetDateInput()
         {
-            DateTime date;
             bool success;
+            string dateInput;
 
             do
             {
                 Console.WriteLine("Please insert the date: (Format: dd-mm-yy). Type 0 to return to main manu.");
-                string dateInput = Console.ReadLine();
-                success = DateTime.TryParseExact(dateInput, "dd-MM-yy", new CultureInfo("en-US"), DateTimeStyles.None, out date);
+                dateInput = Console.ReadLine();
 
                 if (dateInput == "0") UserInput.GetUserInput();
 
-                if (!success)
+                if (!isVailableDate(dateInput))
                 {
                     Console.Clear();
                     controller.Read();
                 AnsiConsole.Markup($"[red]Invalid date format.[/] Please enter the date in the format dd-MM-yy.\n");
                 }
-            } while (!success);
+            } while (!isVailableDate(dateInput));
 
-            var dateString = date.ToString("dd-MM-yy");
+            var dateString = dateTimeInput.ToString("dd-MM-yy");
             return dateString;
+        }
+
+        public static bool isVailableDate(string dateInput)
+        {
+            return DateTime.TryParseExact(dateInput, "dd-MM-yy", new CultureInfo("en-US"), DateTimeStyles.None, out dateTimeInput);
         }
 
         public static string GetTimeInput()
         {
-            DateTime time;
             bool success;
+            string timeInput;
 
             do
             {
                 Console.WriteLine("Please insert the time: (Format: HH:mm). Type 0 to return to main manu.");
-                string timeInput = Console.ReadLine();
-
-                success = DateTime.TryParseExact(timeInput, "HH:mm", new CultureInfo("en-US"), DateTimeStyles.None, out time);
+                timeInput = Console.ReadLine();
 
                 if (timeInput == "0") UserInput.GetUserInput();
 
-                if (!success)
+                if (!isVailableTime(timeInput))
                 {
                     Console.Clear();
                     controller.Read();
                 AnsiConsole.Markup($"[red]Invalid date format.[/] Please enter the date in the format HH:mm.\n");
                 }
-            } while (!success);
+            } while (!isVailableTime(timeInput));
 
-            var timeString = time.ToString("HH:mm");
+            var timeString = dateTimeInput.ToString("HH:mm");
             return timeString;
         }
 
+        public static bool isVailableTime(string timeInput)
+        {
+            return DateTime.TryParseExact(timeInput, "HH:mm", new CultureInfo("en-US"), DateTimeStyles.None, out dateTimeInput);
+        }
+
+
         public static string GetNumberInput(string message)
         {
-            bool success = true;
-            int finalInput;
+            string numberInput;
 
             do
             {
                 Console.WriteLine(message);
-                string numberInput = Console.ReadLine();
+                numberInput = Console.ReadLine();
                 if (numberInput == "0") UserInput.GetUserInput();
-                success = int.TryParse(numberInput, out finalInput);
 
-                if (!success)
+                if (!isVailableCom(numberInput))
 
                 {
                     Console.Clear();
@@ -80,10 +90,18 @@ namespace Coding_Tracker
                     Console.WriteLine("\nInvalid Command. Please type a id of records.\n");
                 }
             }
-            while (success == false && finalInput >= 0 && finalInput <= 4);
+            while (!isVailableCom(numberInput));
 
             return finalInput.ToString();
         }
+
+        public static bool isVailableCom(string numberInput)
+        {
+            bool isInt = int.TryParse(numberInput, out finalInput);
+            bool valiableCom = (finalInput >= 0 && finalInput <= 4);
+            return (isInt && valiableCom);
+        }
+
 
         public static bool TimeSafe(string startTime, string endTime)
         {
